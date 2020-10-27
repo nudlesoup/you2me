@@ -47,7 +47,7 @@ class DecoderRNN(nn.Module):
 
 		# concat the embedding with (im features, homographies)
 		embeddings = torch.cat((poses, features), 2)
-		embeddings = torch.cat((features, homography.cuda()), 2)
+		embeddings = torch.cat((embeddings, homography.cuda()), 2) #features throws out the poses above, changed from features to embeddings
 		embeddings = torch.cat((embeddings, poses2.cuda()), 2)
 		packed = pack_padded_sequence(embeddings, lengths, batch_first=True)
 		hiddens, _ = self.lstm(packed)
