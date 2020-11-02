@@ -1,17 +1,8 @@
+Bugs Fixed in model, dataloader & train file.
+
 # [You2Me: Inferring Body Pose in Egocentric Video via First and Second Person Interactions (CVPR 2020)](http://vision.cs.utexas.edu/projects/you2me/) 
 
 [![report](https://img.shields.io/badge/arXiv-1904.09882-b31b1b.svg)](https://arxiv.org/abs/1904.09882#)
-
-![](data/you2me_preview.gif)
-
-
-## Install
-Download [dataset](https://github.com/facebookresearch/you2me/tree/master/data)
-
-Original training done with CUDA 10.2 
-
-Install basic dependencies with `pip install -r requirements.txt`
-
 
 ## Test
 Please generate:
